@@ -1,0 +1,27 @@
+Algoritmo Algoritmo1
+	
+	Definir num, random, contadorPar, contadorImpar Como Entero
+	
+	Escribir "Digite un numero"
+	
+	Leer num
+	
+	Para i <-- 0 Hasta num Con Paso 1 Hacer
+		
+		random = azar(100)
+		Escribir random
+		check = random %2
+		
+		si check = 0 Entonces
+			contadorPar = contadorPar + 1
+			Escribir "Hay ", contadorPar, " pares"
+		SiNo
+			contadorImpar = contadorImpar + 1
+			Escribir "Hay ", contadorImpar, " impares"
+		FinSi
+		
+	Fin Para
+	
+	Escribir "Hay ", contadorImpar, " impares y ", contadorPar, " pares"
+	
+FinAlgoritmo
